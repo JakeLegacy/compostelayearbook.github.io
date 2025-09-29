@@ -1,0 +1,150 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f5f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #3498db;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.Teachers {
+    font-family: Teachers;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Estilos del contenedor de introducción */
+.containerIntro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.texto {
+    font-family: Teachers;
+    margin-top: 50px;
+}
+
+.textosig {
+    font-family: Teachers;
+}
+
+/* Estilos del contenedor de carpetas */
+.containerFolders {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre imágenes */
+    margin-top: 20px;
+}
+
+.containerFolders a {
+    text-align: center;
+    margin: 15px; /* Espacio entre imágenes */
+}
+
+.containerFolders img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    width: 100%;
+    top: 100px;
+}
+
+footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Animaciones */
+.fade-in-bottom {
+    animation: fade-in-bottom 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-in-top {
+    animation: fade-in-top 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
