@@ -1,0 +1,217 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    background-color: #f2f5f8; /* Fondo más claro */
+    color: #333; /* Color de texto principal */
+    line-height: 1.6;
+}
+
+.drawer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #ccc;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.drawer-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.drawer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.drawer:hover img {
+    opacity: 1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 20px 0;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #3498db; /* Azul más vibrante */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: #fff; /* Texto blanco */
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.Teachers{
+    font-family: Teachers;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+.content-all{
+    width: 210px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+footer {
+
+    background-color: #3498db; /* Mismo color de fondo que la navbar */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+    position: relative;
+    width: 100%;
+    top: 100px;
+}
+
+footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.fade-in-bottom {
+	-webkit-animation: fade-in-bottom 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-bottom 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-in-top {
+	-webkit-animation: fade-in-top 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-top 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.texto{
+    font-family: Teachers;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.textosig{
+    text-align: center;
+    font-family: Teachers;
+}
+
+/* Definir las animaciones */
+@keyframes fade-in-top {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Clases para aplicar las animaciones */
+.fade-in-top {
+    animation: fade-in-top 5s ease forwards;
+}
+
+.fade-in-bottom {
+    animation: fade-in-bottom 5s ease forwards;
+}
+
+.fade-in-left {
+    animation: fade-in-left 5s ease forwards;
+}
+
+.fade-in-right {
+    animation: fade-in-right 5s ease forwards;
+}
